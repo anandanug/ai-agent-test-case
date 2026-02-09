@@ -1,0 +1,39 @@
+# --- Core Framework & Orchestration ---
+# Framework utama untuk aplikasi LLM
+langchain>=0.2.0
+langchain-community
+langchain-core
+
+# Library Orchestration Agentic (Sesuai request)
+langgraph>=0.1.0
+
+# --- LLM Provider ---
+# Asumsi menggunakan OpenAI/Azure OpenAI sebagai "LLM External" [cite: 55]
+# Jika menggunakan model lain (misal Ollama/HuggingFace), ganti library ini.
+langchain-openai
+
+# --- Vector Database (Unified Knowledge Store) ---
+# Penyimpanan vector local untuk dokumen requirement [cite: 64]
+chromadb>=0.5.0
+
+# --- Integrasi Data Source (Confluence MCP) ---
+# Wrapper resmi Atlassian untuk akses API Confluence & Jira [cite: 53, 75]
+atlassian-python-api
+
+# --- Integrasi API (qTest MCP) ---
+# Untuk melakukan HTTP Request ke API qTest [cite: 67]
+requests
+
+# --- Data Processing & Cleaning ---
+# Untuk membersihkan tag HTML dari data Confluence saat normalisasi 
+beautifulsoup4
+lxml
+
+# Utilities untuk memecah teks (Chunking) sebelum masuk Vector DB
+langchain-text-splitters
+tiktoken
+
+# --- Environment Management ---
+# Untuk load API KEY & URL dari file .env
+python-dotenv
+pydantic>=2.0

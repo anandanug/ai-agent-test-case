@@ -1,0 +1,6 @@
+.env
+src/__pycache__/
+src/agent/__pycache__/
+src/config/__pycache__/
+src/utils/__pycache__/
+src/vector_store/
